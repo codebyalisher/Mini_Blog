@@ -2,7 +2,7 @@ asgiref==3.7.2
 certifi==2023.11.17
 charset-normalizer==3.3.2
 distlib==0.3.8
-Django==4.0
+Django==5.0.1
 django-channels==0.7.0
 djangorestframework==3.14.0
 djangorestframework-simplejwt==5.3.1
