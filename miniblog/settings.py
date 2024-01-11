@@ -76,11 +76,11 @@ WSGI_APPLICATION = 'miniblog.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': BASE_DIR / 'railway',
-        'USER': 'postgres',
-        'PASSWORD': '4ebAgaCEdaGcbgEa6ba2-gbf4-a5d-*b',
-        'HOST': 'myrdshost.rds.amazonaws.com',
-        'PORT': '42577',
+        'NAME': 'myappdb',
+        'USER': 'myappuser',
+        'PASSWORD': 'as137669',
+        'HOST': 'myusername-667.postgres.pythonanywhere-services.com',
+        'PORT': 10667,
     }
 }
 
