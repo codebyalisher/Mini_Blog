@@ -24,9 +24,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-^o#jii7hnv8)@6z&f7*=19pra*mq2h%$*$369_*l*gc6t0zv(p'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+<<<<<<< HEAD
 DEBUG = True
 
 
+=======
+DEBUG = False
+>>>>>>> de1c34b001705b8ffb480abed14a4182edc5e229
 
 
 # Application definition
@@ -75,12 +79,24 @@ WSGI_APPLICATION = 'miniblog.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+
+
 DATABASES = {
     'default': {
+<<<<<<< HEAD
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+=======
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.getenv('mydb'),
+        'USER': os.getenv('ali'),
+        'PASSWORD': os.getenv('as137669'),
+        'HOST': os.getenv('DB_HOST', 'localhost'),
+        'PORT': os.getenv('DB_PORT', '5432'),
+>>>>>>> de1c34b001705b8ffb480abed14a4182edc5e229
     }
 }
+
 
 
 # Password validation
