@@ -2,7 +2,9 @@
 # Build the project
 echo "Building the project..."
 pip install django
-pip install psycopg
+pip install --no-cache-dir psycopg2
+pip install psycopg2-binary
+
 pip install -r requirements.txt
 
 
