@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-^o#jii7hnv8)@6z&f7*=19pra*mq2h%$*$369_*l*gc6t0zv(p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+
 
 
 # Application definition
@@ -77,12 +77,8 @@ WSGI_APPLICATION = 'miniblog.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': BASE_DIR / 'railway',
-        'USER': 'postgres',
-        'PASSWORD': '4ebAgaCEdaGcbgEa6ba2-gbf4-a5d-*b',
-        'HOST': 'myrdshost.rds.amazonaws.com',
-        'PORT': '42577',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
